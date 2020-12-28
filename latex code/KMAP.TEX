@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{karnaugh-map}
+\begin{document}
+\section{question}
+The boolean expression F(X,Y,Z)=$\overline{X}Y\overline{Z}+X\overline{Y}\overline{Z}+XY\overline{Z}+XYZ$ converted into the canonical product of sum(POS) form is\\
+\section{answer}
+\subsection{k-map}
+\begin{karnaugh-map}[4][2][1][YZ][X]
+        \minterms{2,4,7,6}
+        \maxterms{0,1,3,5}
+        \indeterminants{2,5}
+        \implicant{0}{1}
+        \implicant{1}{3}
+        \implicant{1}{5}
+        
+    \end{karnaugh-map}
+from the k-map Product of Sum(POS) for the is F=$(Y+X)(\overline{Z}+Y)(\overline{Z}+X)$
+
+    
+
+\end{document}
